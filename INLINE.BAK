@@ -1,0 +1,42 @@
+// A C++ Program using Inline Function
+
+# include < iostream.h>
+#include<conio.h>
+
+class number
+{
+   private:
+	int  ia,   ib;
+	float  fa, fb;
+   public:
+	inline int add (int, int);
+	inline float sub(float, float);
+};
+
+inline int number :: add (  int   ix,  int   iy)
+{
+	int sum;
+
+	sum = ix  + iy ;
+	return sum;
+}
+
+inline float number::sub(float  fx, float  fy)
+{
+	float r;
+
+	r = fx - fy;
+	return  r;
+}
+
+void main  ( )
+{
+	number  n1 ;
+
+	clrscr();
+	cout <<" Addition = " << n1.add (1, 2);
+	cout <<"Substraction = "<<n1.sub(5.5, 2.2);
+	getch( );
+ }
+
+
